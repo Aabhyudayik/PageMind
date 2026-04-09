@@ -1,7 +1,17 @@
 import leaf from '../assets/leaf.png'
+import {useEffect} from "react";
+import { useNavigate } from 'react-router-dom';
 import './splashscreen.css'
 function Splash(){
+  const navigate=useNavigate()
+  useEffect(()=>{
+    const Timer=setTimeout(()=>{
+      navigate("/auth")
+    },4500);
+    return () => clearTimeout(Timer);
+  },[])
 
+  
     return(
           <div className="splash-container">
     <div className="splash-title-wrapper">
