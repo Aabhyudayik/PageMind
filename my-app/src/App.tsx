@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Splash from "./pages/splashscreen.tsx"
-import Auth from "./pages/auth"
+import Signup from "./pages/signup.tsx"
 function App(){
   return(
    
@@ -9,7 +9,7 @@ function App(){
      
     <Routes>
       <Route path='/' element={<Splash />} />
-      <Route path='/auth' element={<Auth />} />
+      <Route path='/signup' element={<Signup />} />
       <Route path="*" element={<Splash />} />
 
     </Routes>

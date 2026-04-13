@@ -6,7 +6,7 @@ function Splash(){
   const navigate=useNavigate()
   useEffect(()=>{
     const Timer=setTimeout(()=>{
-      navigate("/auth")
+      navigate("/signup")
     },4500);
     return () => clearTimeout(Timer);
   },[])
