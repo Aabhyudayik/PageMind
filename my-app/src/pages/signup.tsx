@@ -24,7 +24,7 @@ function Signup(){
                 <input type="password" />
                     </div>
             <div>
-                <input type="Submit" />
+                <button type='submit'>Submit</button>
                     </div>
             </form>
             </div>
