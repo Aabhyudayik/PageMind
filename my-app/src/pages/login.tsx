@@ -1,24 +1,20 @@
-import "./signup.css"
+import "./login.css"
 import leaf from '../assets/leaf.png'
 
-function Signup(){
+function Login(){
     return(
        
             
        
         <div className="form">
-          <div className="signup">
-            <h1>Signup Page</h1>
+          <div className="login">
+            <h1>Login Page</h1>
           </div>
           <img src={leaf} className="leaf top-left" />
           <img src={leaf} className="leaf bottom-right" />
             <form>
                 <div className='field'>
                     <label>Name</label>
-                <input type="text" />
-                    </div>
-                 <div className='field'>
-                    <label>Email</label>
                 <input type="text" />
                     </div>
                  <div className='field'>
@@ -33,4 +29,4 @@ function Signup(){
     )
 
 }
-export default Signup
+export default Login
